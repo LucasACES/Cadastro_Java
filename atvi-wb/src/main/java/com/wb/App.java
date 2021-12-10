@@ -25,6 +25,10 @@ public class App {
 		Empresa empresa = new Empresa();
 		boolean execucao = true;
 		while (execucao) {
+			System.out.println("");
+			System.out.println("");
+			System.out.println("");
+			System.out.println("");
 			System.out.println("Que tipo de operação você deseja fazer:");
 			System.out.println("1  - Cadastrar Cliente");
 			System.out.println("2  - Cadastrar Produtos");
@@ -52,6 +56,8 @@ public class App {
 			System.out.println("----------------------------------");
 			System.out.println("");
 			System.out.println("0  - Sair");
+			System.out.println("");
+			System.out.println("");
 
 			Entrada entrada = new Entrada();
 			int operacao = entrada.receberNumeroInteiro();
@@ -111,6 +117,7 @@ public class App {
 			case 13:
 				editar = new RemoveServico(empresa.getServicos());
 				editar.editar();
+				break;
 			default:
 				System.out.println("Operação não entendida");
 			}

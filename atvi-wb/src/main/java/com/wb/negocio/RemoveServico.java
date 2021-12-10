@@ -15,7 +15,7 @@ public class RemoveServico extends Editar {
 	}
 	@Override
 	public void editar() {
-		System.out.println("Digite o nome do serviço que quer alterar:");
+		System.out.println("Digite o nome do serviço que quer remover:");
 		String nomeserv = entrada.receberTexto();
 
 		for(int i = 0;i<servico.size(); i++) {
